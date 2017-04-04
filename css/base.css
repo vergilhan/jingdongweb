@@ -1,0 +1,86 @@
+/*公共样式*/
+
+/*重置*/
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    font-family: '微软雅黑','microsoft yahei', sans-serif;
+    font-size: 14px;
+}
+a {
+    text-decoration: none;
+    color: #666;
+}
+a:hover {
+    text-decoration: none;
+    color: #666;
+}
+ul {
+    list-style: none;
+}
+input {
+    outline: none;
+    border: none;
+    border: 1px solid #ccc;
+}
+
+
+/*添加*/
+.m_left10 {
+    margin-left: 10px;
+}
+.m_right10 {
+    margin-right: 10px;
+}
+.m_top10 {
+    margin-top: 10px;
+}
+.f_left {
+    float: left;
+}
+.f_right {
+    float: right;
+}
+.a_50 {
+    width: 50%;
+}
+.a_50 > img {
+    width: 100%;
+    display: block;
+}
+.b_bottom {
+    border-bottom: 1px solid #ccc;
+}
+.b_right {
+    border-right: 1px solid #ccc;
+}
+.b_left {
+    border-left: 1px solid #ccc;
+}
+/*精灵图公共样式*/
+[class^="jd_icon"] {
+    position: absolute;
+    background: url("../images/sprites.png") no-repeat;
+    -webkit-background-size: 200px 200px;
+    background-size: 200px 200px;
+}
+
+
+
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: block;
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden;
+}
